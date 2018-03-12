@@ -4,21 +4,9 @@
 #include <Adafruit_PCD8544.h>
 #include <DHT.h>
 #include <avr/wdt.h>
+#include <RotaryEncoder.h>
+#include "pin_def.h"
 
-
-#define DHTTYPE DHT11   // DHT 11
-#define DHTPIN 2 // what digital pin we're connected to
-
-
-#define PIN_RESET 7  // LCD1 Reset
-#define PIN_SCE   6  // LCD2 Chip Select
-#define PIN_DC    5   // LCD3 Dat/Command
-#define PIN_SDIN  4   // LCD4 Data in
-#define PIN_SCLK  3   // LCD5 Clk
-#define PIN_BL    9   // LCD7 Vled
-              // LCD6 Vcc
-              // LCD7 Vled
-              // LCD8 Gnd
 
 Adafruit_PCD8544 display = Adafruit_PCD8544(PIN_SCLK, PIN_SDIN, PIN_DC, PIN_SCE, PIN_RESET);
 DHT dht(DHTPIN, DHTTYPE);
@@ -30,7 +18,7 @@ String total;
 unsigned long prev_ms_dht   =    0;
 
 int led_state = LOW;
-#define led_id LED_BUILTIN
+
 #define alive_on_time 50
 #define alive_cycle_time 5000
 unsigned long prev_ms_alive = 0;
