@@ -19,14 +19,6 @@
 							<builder buildPath="${workspace_loc:/moisture-display}/Release" id="io.sloeber.sketch.builder.1795831877" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Arduino sketch builder" superClass="io.sloeber.sketch.builder"/>
 							<tool id="io.sloeber.tool.sketch.compiler.cpp.60705561" name="Arduino C++ Compiler" superClass="io.sloeber.tool.sketch.compiler.cpp">
 								<option id="io.sloeber.compiler.cpp.sketch.option.incpath.463024839" name="Include Paths (-I)" superClass="io.sloeber.compiler.cpp.sketch.option.incpath" valueType="includePath">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moisture-display/core/core}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moisture-display/core/variant}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moisture-display/libraries/SPI}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moisture-display/libraries/SPI/src}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moisture-display/libraries/Adafruit_GFX_Library}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moisture-display/libraries/Adafruit_PCD8544_Nokia_5110_LCD_library}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moisture-display/libraries/DHT_sensor_library}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moisture-display/libraries/Adafruit_Unified_Sensor}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/arduino-moisture-display/core/core}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/arduino-moisture-display/core/variant}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/arduino-moisture-display/libraries/Adafruit_GFX_Library}&quot;"/>
@@ -35,19 +27,12 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/arduino-moisture-display/libraries/DHT_sensor_library}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/arduino-moisture-display/libraries/SPI}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/arduino-moisture-display/libraries/SPI/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/arduino-moisture-display/libraries/RotaryEncoder}&quot;"/>
 								</option>
 								<inputType id="io.sloeber.compiler.cpp.sketch.input.1370635300" name="CPP source files" superClass="io.sloeber.compiler.cpp.sketch.input"/>
 							</tool>
 							<tool id="io.sloeber.tool.compiler.c.1146508895" name="Arduino C Compiler" superClass="io.sloeber.tool.compiler.c">
 								<option id="io.sloeber.compiler.c.sketch.option.incpath.2054430576" name="Include Paths (-I)" superClass="io.sloeber.compiler.c.sketch.option.incpath" valueType="includePath">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moisture-display/core/core}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moisture-display/core/variant}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moisture-display/libraries/SPI}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moisture-display/libraries/SPI/src}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moisture-display/libraries/Adafruit_GFX_Library}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moisture-display/libraries/Adafruit_PCD8544_Nokia_5110_LCD_library}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moisture-display/libraries/DHT_sensor_library}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moisture-display/libraries/Adafruit_Unified_Sensor}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/arduino-moisture-display/core/core}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/arduino-moisture-display/core/variant}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/arduino-moisture-display/libraries/Adafruit_GFX_Library}&quot;"/>
@@ -56,19 +41,12 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/arduino-moisture-display/libraries/DHT_sensor_library}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/arduino-moisture-display/libraries/SPI}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/arduino-moisture-display/libraries/SPI/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/arduino-moisture-display/libraries/RotaryEncoder}&quot;"/>
 								</option>
 								<inputType id="io.sloeber.compiler.c.sketch.input.1660696939" name="C Source Files" superClass="io.sloeber.compiler.c.sketch.input"/>
 							</tool>
 							<tool id="io.sloeber.tool.sketch.compiler.s.913600258" name="Arduino Assembler" superClass="io.sloeber.tool.sketch.compiler.s">
 								<option id="io.sloeber.compiler.asm.sketch.option.incpath.1898483059" name="Include Paths (-I)" superClass="io.sloeber.compiler.asm.sketch.option.incpath" valueType="includePath">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moisture-display/core/core}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moisture-display/core/variant}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moisture-display/libraries/SPI}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moisture-display/libraries/SPI/src}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moisture-display/libraries/Adafruit_GFX_Library}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moisture-display/libraries/Adafruit_PCD8544_Nokia_5110_LCD_library}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moisture-display/libraries/DHT_sensor_library}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moisture-display/libraries/Adafruit_Unified_Sensor}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/arduino-moisture-display/core/core}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/arduino-moisture-display/core/variant}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/arduino-moisture-display/libraries/Adafruit_GFX_Library}&quot;"/>
@@ -77,6 +55,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/arduino-moisture-display/libraries/DHT_sensor_library}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/arduino-moisture-display/libraries/SPI}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/arduino-moisture-display/libraries/SPI/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/arduino-moisture-display/libraries/RotaryEncoder}&quot;"/>
 								</option>
 								<inputType id="io.sloeber.compiler.S.sketch.input.818027302" name="Assembly source files" superClass="io.sloeber.compiler.S.sketch.input"/>
 							</tool>

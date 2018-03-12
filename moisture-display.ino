@@ -10,6 +10,8 @@
 Adafruit_PCD8544 display = Adafruit_PCD8544(PIN_SCLK, PIN_SDIN, PIN_DC, PIN_SCE,
 		PIN_RESET);
 DHT dht(DHTPIN, DHTTYPE);
+RotaryEncoder encoder(ENC_A,ENC_B);
+
 float h = 0;
 float t = 0;
 String total;
@@ -35,7 +37,22 @@ unsigned int inconsistent_cnt = max_inconsistent;
 bool na_display = false;
 bool consistant = true;
 
+#define MAX_BL 10
+#define MIN_BL 0
+#define INIT_BL 0
+unsigned int backlight=INIT_BL;
+
+// The Interrupt Service Routine for Pin Change Interrupt 1
+// This routine will only be called on any signal change on A2 and A3: exactly where we need to check.
+ISR(PCINT1_vect) {
+  encoder.tick(); // just call tick() to check the state.
+}
+
 void setup() {
+	// You may have to modify the next 2 lines if using other pins than A2 and A3
+	PCICR |= (1 << PCIE1);    // This enables Pin Change Interrupt 1 that covers the Analog input pins or Port C.
+	PCMSK1 |= (1 << PCINT10) | (1 << PCINT11);  // This enables the interrupt for pin 2 and 3 of Port C.
+
 	wdt_disable();
 	dht.begin();
 	display.begin();
@@ -53,6 +70,10 @@ void setup() {
 }
 
 void loop() {
+
+	static int pos = 0;
+	int newPos = encoder.getPosition();
+
 	timer = millis();
 
 	if (timer - prev_ms_wd >= watchdog_time) {
@@ -119,5 +140,20 @@ void loop() {
 			}
 		}
 	}
+	 if (pos != newPos) {
+		 if (pos>newPos) {
+			 if (backlight<MAX_BL) {
+				 backlight++;
+			 }
+
+		 }
+		 else {
+			 if (backlight>MIN_BL) {
+				 backlight--;
+			 }
+		 }
+		 analogWrite(PIN_BL,(MAX_BL-backlight)*255/MAX_BL);
+		 pos = newPos;
+	 }
 
 }
